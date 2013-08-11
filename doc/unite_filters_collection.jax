@@ -5,17 +5,18 @@
 unite-filters-collection		*unite-filters-collection*
 
 ------------------------------------------------------------------------------
-					*unite-filter-converter_abbr_with_ftime*
-converter_abbr_with_ftime
-		abbr の前に候補の最終更新時間を追加します。
+converter_add_ftime_abbr		*unite-filter-converter_add_ftime_abbr*
+	abbr の前に候補の最終更新時間を追加します。
 >
-		" converter_abbr_with_ftime なし
-		>  2013-07-04-034003.howm
+	" converter_add_ftime_abbr なし
+	>  2013-07-04-034003.howm
 
-		" converter_abbr_with_ftime あり
-		> (2013/08/11 23:17:50) 2013-07-04-034003.howm
+	" converter_add_ftime_abbr あり
+	> (2013/08/11 23:17:50) 2013-07-04-034003.howm
 <
-
+				*unite-filter-converter_file_firstline_abbr*
+converter_file_firstline_abbr
+	候補のファイルの一行目を abbr に設定します。
 
 
 ==============================================================================
