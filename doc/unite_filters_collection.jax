@@ -18,6 +18,10 @@ converter_add_ftime_abbr		*unite-filter-converter_add_ftime_abbr*
 converter_file_firstline_abbr
 	abbr に候補のファイルの一行目を設定します。
 
+				*unite-filter-converter_file_firstline_word*
+converter_file_firstline_word
+	word に候補のファイルの一行目を設定します。
+
 
 ==============================================================================
 vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
