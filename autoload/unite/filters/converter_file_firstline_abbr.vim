@@ -19,14 +19,13 @@ endfunction
 
 
 function! s:filters.filter(candidates, context)
-	let candidates = deepcopy(a:candidates)
-	for candidate in candidates
+	for candidate in a:candidates
 		let firstline = s:get_firstline(candidate.action__path)
 		if !empty(firstline)
 			let candidate.abbr = firstline
 		endif
 	endfor
-	return candidates
+	return a:candidates
 endfunction
 
 
