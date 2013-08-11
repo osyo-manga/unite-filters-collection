@@ -16,7 +16,7 @@ converter_add_ftime_abbr		*unite-filter-converter_add_ftime_abbr*
 <
 				*unite-filter-converter_file_firstline_abbr*
 converter_file_firstline_abbr
-	候補のファイルの一行目を abbr に設定します。
+	abbr に候補のファイルの一行目を設定します。
 
 
 ==============================================================================
