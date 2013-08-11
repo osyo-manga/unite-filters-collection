@@ -1,0 +1,22 @@
+*unite-filters-collection.txt*
+
+
+=============================================================================
+unite-filters-collection		*unite-filters-collection*
+
+------------------------------------------------------------------------------
+					*unite-filter-converter_abbr_with_ftime*
+converter_abbr_with_ftime
+		abbr の前に候補の最終更新時間を追加します。
+>
+		" converter_abbr_with_ftime なし
+		>  2013-07-04-034003.howm
+
+		" converter_abbr_with_ftime あり
+		> (2013/08/11 23:17:50) 2013-07-04-034003.howm
+<
+
+
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
