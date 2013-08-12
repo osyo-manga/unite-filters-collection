@@ -22,6 +22,14 @@ converter_file_firstline_abbr
 converter_file_firstline_word
 	word に候補のファイルの一行目を設定します。
 
+				*unite-filter-converter_erase_bufnr*
+converter_erase_bufnr
+	バッファ番号、ファイルタイプ、更新日時を表示しない
+>
+	hoge.txt [16 h][txt] (1970/01/01 09:00:00)
+	↓
+	hoge.txt
+<
 				*unite-filter-matcher_file_name*
 matcher_file_name
 	file 名だけを使ってマッチングします。
