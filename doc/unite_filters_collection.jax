@@ -22,6 +22,26 @@ converter_file_firstline_abbr
 converter_file_firstline_word
 	word に候補のファイルの一行目を設定します。
 
+				*unite-filter-matcher_file_name*
+matcher_file_name
+	file 名だけを使ってマッチングします。
+>
+	/hoge/fuga/memo.txt
+	→ memo.txt だけで判定
+<
+				*unite-filter-matcher_fussy*
+matcher_fussy
+	常にあいまいなマッチングをします。
+>
+	> /hoge/fuga/m
+	  /hoge/fuga/memo.txt
+
+	> /hoge/fuga/m
+	  /hoge/fuga/Memo.txt
+
+	> /hoge/fuga/ot
+	  /hoge/fuga/Memo.txt
+
 
 ==============================================================================
 vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
