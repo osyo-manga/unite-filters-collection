@@ -22,7 +22,7 @@ converter_file_firstline_abbr
 converter_file_firstline_word
 	word に候補のファイルの一行目を設定します。
 
-				*unite-filter-converter_erase_bufnr*
+				*unite-filter-converter_erase_buffer_status*
 converter_erase_buffer_status
 	バッファ番号、ファイルタイプ、更新日時を表示しない
 >
