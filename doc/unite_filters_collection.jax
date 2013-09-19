@@ -1,4 +1,3 @@
-*unite-filters-collection.txt*
 
 
 =============================================================================
@@ -30,14 +29,14 @@ converter_erase_buffer_status
 	↓
 	hoge.txt
 <
-				*unite-filter-matcher_file_name*
+					*unite-filter-matcher_file_name*
 matcher_file_name
 	file 名だけを使ってマッチングします。
 >
 	/hoge/fuga/memo.txt
 	→ memo.txt だけで判定
 <
-				*unite-filter-matcher_fussy*
+					*unite-filter-matcher_fussy*
 matcher_fussy
 	常にあいまいなマッチングをします。
 >
