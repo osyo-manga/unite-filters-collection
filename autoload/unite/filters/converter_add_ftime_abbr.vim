@@ -9,8 +9,8 @@ endfunction
 
 
 function! s:getftime(candidate)
-	return has_key(a:candidate, "action__path")      ? getftime(a:candidate.action__path)
-\		 : has_key(a:candidate, "action__directory") ? getftime(a:candidate.action__directory)
+	return has_key(a:candidate, "action__path")      ? getftime(expand(a:candidate.action__path))
+\		 : has_key(a:candidate, "action__directory") ? getftime(expand(a:candidate.action__directory))
 \		 : 0
 endfunction
 
