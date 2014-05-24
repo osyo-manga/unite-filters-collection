@@ -51,7 +51,21 @@ matcher_fussy
 
 	> /hoge/fuga/ot
 	  /hoge/fuga/Memo.txt
-
+<
+					*unite-filter-matcher_ngram*
+matcher_ngram
+	N-gramによるマッチングをします。
+	デフォルトでは、3-gramでのマッチングです。変更するには、
+>
+	" 2-gramへ変更
+	call unite#custom#source('matcher_ngram', 'n', 2)
+<
+	としてください。
+>
+	> すごくいい話
+	→ 3-gramの場合、「すごく」「ごくい」「くいい」「いい話」のいずれか
+	   にマッチするかどうかで判定
+<
 
 ==============================================================================
 vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
