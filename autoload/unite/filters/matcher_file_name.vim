@@ -12,12 +12,17 @@ let s:matcher = {
       \}
 
 function! s:matcher.filter(candidates, context)
-  if a:context.input == ''
+  if stridx(a:context.input, '/') >= 0
+	let pattern = matchstr(a:context.input, '/\zs[^/]*$')
+  else
+	let pattern = a:context.input
+  endif
+  if pattern == ''
     return a:candidates
   endif
 
   let candidates = a:candidates
-  for input in split(a:context.input, '\\\@<! ')
+  for input in split(pattern, '\\\@<! ')
     let input = substitute(input, '\\ ', ' ', 'g')
 
     let input = substitute(substitute(unite#util#escape_match(input),
